@@ -6,7 +6,7 @@
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <style>
-    * { box-sizing: border-box; margin: 0; padding: 0; }
+     * { box-sizing: border-box; margin: 0; padding: 0; }
 
     body {
       background: radial-gradient(ellipse at top, #2a1000 0%, #0d0600 100%);
@@ -28,8 +28,8 @@
     }
 
     .subtitle {
-      font-size: 0.8rem;
-      color: #666;
+      font-size: 3.9rem;
+      color: turquoise;
       letter-spacing: 3px;
       text-transform: uppercase;
       font-family: Arial, sans-serif;
@@ -37,10 +37,10 @@
     }
 
     .game-timer {
-      font-size: 2.4rem;
-      font-weight: 900;
-      color: white;
-      margin-bottom: 24px;
+      font-size: 5.7rem;
+      font-weight: 1500;
+      color: green;
+      margin-bottom: 25px;
       text-align: center;
       min-width: 60px;
     }
@@ -99,7 +99,7 @@
       padding: 12px 16px;
       text-align: center;
       font-size: 0.9rem;
-      color: #bbb;
+      color: turquoise;
       margin-bottom: 28px;
       border: 1px solid rgba(255,255,255,0.07);
       display: flex;
@@ -151,7 +151,7 @@
     .shoot-btn .btn-label {
       font-size: 0.7rem;
       font-weight: 700;
-      color: white;
+      color:turquoise ;
       font-family: Arial, sans-serif;
       letter-spacing: 1.5px;
     }
@@ -184,7 +184,7 @@
     }
     .cooldown-label {
       font-size: 0.78rem;
-      color: #777;
+      color: red;
       margin-top: 6px;
       text-align: center;
       min-height: 1.1em;
@@ -235,18 +235,17 @@
     .restart-btn:active { transform: scale(0.95); }
 
   .wc-nav { position: fixed; top: 12px; left: 12px; display: flex; gap: 8px; z-index: 1000; }
-  .wc-nav a { background: rgba(0,0,0,0.65); color: white; text-decoration: none; padding: 6px 14px; border-radius: 20px; font-size: 0.8rem; font-family: Arial, sans-serif; backdrop-filter: blur(4px); border: 1px solid rgba(255,255,255,0.15); }
+  .wc-nav a { background: rgba(0,0,0,0.65); color: blue; text-decoration: none; padding: 6px 14px; border-radius: 20px; font-size: 0.8rem; font-family: Arial, sans-serif; backdrop-filter: blur(4px); border: 1px solid rgba(255,255,255,0.15); }
   .wc-nav a:hover { background: rgba(0,0,0,0.9); }
 </style>
 </head>
 <body>
-
 <nav class="wc-nav">
   <a href="/">&#127968; Home</a>
   <a href="/web-craft/">&#8592; Examples</a>
 </nav>
 
-<h1>🏀 Basketball Battle</h1>
+<h1>🏀 Colin</h1>
 <div class="subtitle">60 second game</div>
 
 <div class="game-timer" id="game-timer">60</div>
@@ -293,9 +292,8 @@
     <button class="restart-btn" onclick="restart()">🔄 Play Again</button>
   </div>
 </div>
-
 <script>
-  const GAME_SECS     = 60;
+   const GAME_SECS     = 60;
   const CPU_MS        = 2000;   // CPU scores every 2 seconds
   const COOLDOWN_MS   = 2500;   // button cooldown after each shot
 
